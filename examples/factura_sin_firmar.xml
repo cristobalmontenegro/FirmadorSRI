@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<factura id="comprobante" version="1.1.0">
+  <infoTributaria>
+    <ambiente>2</ambiente>
+    <tipoEmision>1</tipoEmision>
+    <razonSocial>MI EMPRESA S.A.</razonSocial>
+    <nombreComercial>MI EMPRESA</nombreComercial>
+    <ruc>1799999999001</ruc>
+    <claveAcceso>1506202601179999999900110010010000000011234567811</claveAcceso>
+    <codDoc>01</codDoc>
+    <estab>001</estab>
+    <ptoEmi>001</ptoEmi>
+    <secuencial>000000001</secuencial>
+    <dirMatriz>Av. Principal SN y Calle Secundaria</dirMatriz>
+  </infoTributaria>
+  <infoFactura>
+    <fechaEmision>15/06/2026</fechaEmision>
+    <dirEstablecimiento>Matriz</dirEstablecimiento>
+    <contribuyenteEspecial>155</contribuyenteEspecial>
+    <obligadoContabilidad>SI</obligadoContabilidad>
+    <tipoIdentificacionComprador>04</tipoIdentificacionComprador>
+    <razonSocialComprador>CLIENTE DE PRUEBA CIA LTDA.</razonSocialComprador>
+    <identificacionComprador>1799999999001</identificacionComprador>
+    <direccionComprador>Av. Prueba 123</direccionComprador>
+    <totalSinImpuestos>100.00</totalSinImpuestos>
+    <totalDescuento>0.00</totalDescuento>
+    <codDocReembolso>00</codDocReembolso>
+    <totalComprobantesReembolso>0.00</totalComprobantesReembolso>
+    <totalBaseImponibleReembolso>0.00</totalBaseImponibleReembolso>
+    <totalImpuestoReembolso>0.00</totalImpuestoReembolso>
+    <totalConImpuestos>
+      <totalImpuesto>
+        <codigo>2</codigo>
+        <codigoPorcentaje>2</codigoPorcentaje>
+        <baseImponible>100.00</baseImponible>
+        <valor>12.00</valor>
+      </totalImpuesto>
+    </totalConImpuestos>
+    <propina>0.00</propina>
+    <importeTotal>112.00</importeTotal>
+    <moneda>DOLAR</moneda>
+    <pagos>
+      <pago>
+        <formaPago>01</formaPago>
+        <total>112.00</total>
+        <plazo>0</plazo>
+        <unidadTiempo>dias</unidadTiempo>
+      </pago>
+    </pagos>
+    <valorRetIva>0.00</valorRetIva>
+    <valorRetRenta>0.00</valorRetRenta>
+  </infoFactura>
+  <detalles>
+    <detalle>
+      <codigoPrincipal>PR001</codigoPrincipal>
+      <descripcion>Producto de prueba</descripcion>
+      <cantidad>1.000000</cantidad>
+      <precioUnitario>100.000000</precioUnitario>
+      <descuento>0.00</descuento>
+      <precioTotalSinImpuesto>100.00</precioTotalSinImpuesto>
+      <impuestos>
+        <impuesto>
+          <codigo>2</codigo>
+          <codigoPorcentaje>2</codigoPorcentaje>
+          <tarifa>12</tarifa>
+          <baseImponible>100.00</baseImponible>
+          <valor>12.00</valor>
+        </impuesto>
+      </impuestos>
+    </detalle>
+  </detalles>
+  <infoAdicional>
+    <campoAdicional nombre="Correo">test@ejemplo.com</campoAdicional>
+  </infoAdicional>
+</factura>

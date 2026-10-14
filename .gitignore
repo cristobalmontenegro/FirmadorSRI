@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+
+# Salidas de prueba
+temp/
+
+# Certificados y secretos — NUNCA versionar
+*.p12
+*.pfx
+*.pem
+*.key
+.env
+
+# Editores / sistema
+.vscode/
+.idea/
+.DS_Store

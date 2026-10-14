@@ -1,0 +1,24 @@
+services:
+  firmador:
+    build: .
+    container_name: firmador-sri
+    ports:
+      # host:contenedor — cambia el puerto del host si el 8080 está ocupado
+      - "8099:8080"
+    environment:
+      - PORT=8080
+      - HOST=0.0.0.0
+      # Modo LOCAL (por defecto): firma siempre con P12_PATH.
+      - FORCE_LOCAL_P12=1
+      - P12_PATH=/app/Firmado/certificado.p12
+      # Valida el XML contra los XSD antes de firmar (opcional).
+      - XSD_DIR=/app/xsd
+      #
+      # ── Modo REQUEST (certificado enviado por el cliente) ──────────────
+      # Para firmar con la ruta + certificado que envíe cada petición,
+      # deja la variable vacía:  FORCE_LOCAL_P12=
+      # El .p12 debe existir dentro del contenedor (vía el volumen de abajo).
+    volumes:
+      # Coloca aquí tus certificados (.p12). Nunca los subas al repositorio.
+      - ./certificados:/app/Firmado:ro
+    restart: unless-stopped
