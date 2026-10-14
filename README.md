@@ -51,7 +51,7 @@ firmado de terceros.
 ### 🚀 Inicio rápido
 
 ```bash
-# 1. Clona
+# 📦 1. Clona
 git clone https://github.com/cristobalmontenegro/FirmadorSRI.git
 cd FirmadorSRI
 
